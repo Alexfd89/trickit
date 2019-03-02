@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { AppBar, Toolbar, Typography } from '@material-ui/core'
-import youtubeIcon from '../images/youtube.svg'
+
 
 class Header extends Component {
     render() {
@@ -11,9 +11,6 @@ class Header extends Component {
                         <Typography variant="h6" color="inherit" style={{ flexGrow: 1 }}>
                             TRICKIT
                         </Typography>
-                        {/* <a href="https://www.youtube.com/channel/UC_eJD_8L87rz-Oe_6tyY3Vg">
-                            <img style={{ width: '100px' }} src={youtubeIcon} alt='youtube Icon' />
-                        </a> */}
                     </Toolbar>
                 </AppBar>
             </div>
