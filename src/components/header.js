@@ -1,42 +1,24 @@
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
-import React from "react"
+import React, { Component } from 'react'
+import { AppBar, Toolbar, Typography } from '@material-ui/core'
+import youtubeIcon from '../images/youtube.svg'
 
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
-  </header>
-)
-
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-Header.defaultProps = {
-  siteTitle: ``,
+class Header extends Component {
+    render() {
+        return (
+            <div>
+                <AppBar position="static" style={{ background: '#212121' }} >
+                    <Toolbar>
+                        <Typography variant="h6" color="inherit" style={{ flexGrow: 1 }}>
+                            TRICKIT
+                        </Typography>
+                        {/* <a href="https://www.youtube.com/channel/UC_eJD_8L87rz-Oe_6tyY3Vg">
+                            <img style={{ width: '100px' }} src={youtubeIcon} alt='youtube Icon' />
+                        </a> */}
+                    </Toolbar>
+                </AppBar>
+            </div>
+        )
+    }
 }
 
 export default Header
