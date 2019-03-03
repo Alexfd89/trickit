@@ -14,7 +14,7 @@ const Layout = ({ children }) => (
       <AppBar position="static" style={{ background: '#000000' }} >
         <Toolbar>
           <div style={{ flexGrow: 1 }}>
-            <img src={logo} alt='trickit logo' style={{ maxWidth: '200px', padding: '5px 0' }} />
+            <img src={logo} alt='trickit logo' style={{ width: '180px', padding: '5px 0' }} />
           </div>
           <Slide direction='left' in={true}>
             <div style={{ display: 'flex', alignItems: 'center' }}>
