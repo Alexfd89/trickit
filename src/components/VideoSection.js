@@ -1,26 +1,25 @@
 import React, { Component } from 'react'
-import { Typography } from '@material-ui/core'
+import { Typography, Grid } from '@material-ui/core'
 
 export class VideoSection extends Component {
     render() {
-        const { title, src, side } = this.props
+        const { title, src } = this.props
         return (
-            <div style={{ width: '100%', margin: '60px auto', display: 'flex', flexDirection: side === 'left' ? 'row' : 'row-reverse', justifyContent: 'space-between'}}>
-                <Typography variant='h6' style={{ color: '#eeeeee' }}>
+            <Grid item lg={6} xs={12} md={6}>
+                <div style={{maxWidth: '500px', margin: '0 auto'}}>
+                <Typography variant='h6' style={{ color: '#eeeeee', margin: '0 auto' }}>
                     {title}
                 </Typography>
-                <div style={{ margin: '0 auto' }}>
                     <iframe
-                        width="560"
+                        width="100%"
                         height="315"
                         src={src}
                         frameBorder="0"
-                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                         allowFullScreen
                     >
                     </iframe>
                 </div>
-            </div>
+            </Grid>
         )
     }
 }
