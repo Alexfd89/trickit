@@ -9,18 +9,18 @@ import styles from '../styles'
 const IndexPage = ({ classes }) => (
   <Layout>
     <SEO title="Home" keywords={[`abs`, `workout`, `abs beginners`, `abs advanced`]} />
-    <div className={classes.sector}>
-      <Typography className={classes.sectorTitle} variant='h4' align='center'>beginners</Typography>
+    <div className='sector'>
+      <Typography className='sectorTitle' variant='h4' align='center'>beginners</Typography>
     </div>
-    <Grid container spacing={16} alignContent='center' className={classes.grid}>
+    <Grid container spacing={16} alignContent='center' className='grid'>
       <VideoSection src="https://www.youtube.com/embed/sANj9NtQp0M"/>
       <VideoSection src="https://www.youtube.com/embed/9qiywV82stA"/>
       <VideoSection src="https://www.youtube.com/embed/c-MUOkLZrNY"/>
     </Grid>
-    <div className={classes.sector}>
-      <Typography className={classes.sectorTitle} variant='h4' align='center'>advanced</Typography>
+    <div className='sector'>
+      <Typography className='sectorTitle' variant='h4' align='center'>advanced</Typography>
     </div>
-    <Grid container spacing={24} alignContent='center' className={classes.grid}>
+    <Grid container spacing={24} alignContent='center' className='grid'>
       <VideoSection src="https://www.youtube.com/embed/tpu89p7q0po"/>
       <VideoSection src="https://www.youtube.com/embed/D4BzT0QfWHw"/>
       <VideoSection src="https://www.youtube.com/embed/6o4YAsH-CTI"/>
