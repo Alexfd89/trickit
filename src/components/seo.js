@@ -32,6 +32,7 @@ export default class seo extends Component {
                 <meta name="image" content={image} />
                 <meta http-equiv="content-language" content="en" />
                 <meta name="keywords" content={keywords.join(', ')} />
+                <meta name="robots" content="index, follow" />
 
 
                 {/* Schema.org tags */}
