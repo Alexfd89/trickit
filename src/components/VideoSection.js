@@ -11,6 +11,7 @@ export class VideoSection extends Component {
                         width="100%"
                         height="315"
                         src={src}
+                        title={src}
                         frameBorder="0"
                         allowFullScreen
                     />

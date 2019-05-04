@@ -6,13 +6,13 @@ import { Grid, Typography } from '@material-ui/core'
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" keywords={[`abs`, `workout`, `abs beginners`, `abs advanced`]} />
+    <SEO title="Home" keywords={[`trickit`, `abs`, `workout`, `abs beginners`, `abs advanced`]} />
     <div className='sector'>
       <Typography className='sectorTitle' variant='h4' style={{ color: 'lightgrey' }} align='center'>beginners</Typography>
     </div>
     <div style={{ display: 'flex', justifyContent: 'center', margin: '10px 0', padding: '5px' }}>
       <Typography align='center' style={{ color: 'lightgrey', maxWidth: '600px' }}>
-TrickiT Workout has created a series of training for beginners. It consists of 3-levels. This series will help you get into the workout tone. Exercises are selected so that you will be involved all groups of abdominal muscles. While training on this complex of training, you will see that you will rather quickly lose belly fat, 6 packs will begin to appear and you will have a flat and beautiful stomach.
+        TrickiT Workout has created a series of training for beginners. It consists of 3-levels. This series will help you get into the workout tone. Exercises are selected so that you will be involved all groups of abdominal muscles. While training on this complex of training, you will see that you will rather quickly lose belly fat, 6 packs will begin to appear and you will have a flat and beautiful stomach.
       </Typography>
     </div>
     <Grid container spacing={16} alignContent='center' className='grid'>

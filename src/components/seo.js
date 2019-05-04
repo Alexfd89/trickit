@@ -1,91 +1,62 @@
-import React from "react"
-import PropTypes from "prop-types"
-import Helmet from "react-helmet"
-import { useStaticQuery, graphql } from "gatsby"
+import React, { Component } from 'react';
+import Helmet from 'react-helmet';
 
-function SEO({ description, lang, meta, keywords, title }) {
-  const { site } = useStaticQuery(
-    graphql`
-      query {
-        site {
-          siteMetadata {
-            title
-            description
-            author
-          }
+export default class SEO extends Component {
+
+    render() {
+        const title = 'TrickiT Workout';
+        const name = 'TrickiT Workout';
+        const url = 'https://trickit.netlify.com';
+        const description = 'TrickiT Workout, YouTube Channel.';
+        const image = `${url}/static/logo-74fdd5d5384ffbcfcca0b737b891d040.png`;
+
+        const schemaOrgJSONLD = {
+            "@context": "http://schema.org",
+            "@type": "Organization",
+            url,
+            name,
+            alternateName: `${name} Channel`
         }
-      }
-    `
-  )
 
-  const metaDescription = description || site.siteMetadata.description
+        return (
 
-  return (
-    <Helmet
-      htmlAttributes={{
-        lang,
-      }}
-      title={title}
-      titleTemplate={`%s | ${site.siteMetadata.title}`}
-      meta={[
-        {
-          name: `description`,
-          content: metaDescription,
-        },
-        {
-          property: `og:title`,
-          content: title,
-        },
-        {
-          property: `og:description`,
-          content: metaDescription,
-        },
-        {
-          property: `og:type`,
-          content: `website`,
-        },
-        {
-          name: `twitter:card`,
-          content: `summary`,
-        },
-        {
-          name: `twitter:creator`,
-          content: site.siteMetadata.author,
-        },
-        {
-          name: `twitter:title`,
-          content: title,
-        },
-        {
-          name: `twitter:description`,
-          content: metaDescription,
-        },
-      ]
-        .concat(
-          keywords.length > 0
-            ? {
-                name: `keywords`,
-                content: keywords.join(`, `),
-              }
-            : []
-        )
-        .concat(meta)}
-    />
-  )
+            <Helmet>
+                <title>{title}</title>
+
+                {/* General tags */}
+                <meta name="description" content={description} />
+                <meta name="image" content={image} />
+                <meta http-equiv="content-language" content="en" />
+
+
+                {/* Schema.org tags */}
+                <script type="application/ld+json">
+                    {JSON.stringify(schemaOrgJSONLD)}
+                </script>
+
+
+                {/* OpenGraph tags */}
+                <meta property="og:site_name" content={name} />
+                <meta property="og:url" content={url} />
+                <meta property="og:type" content="article" />
+                <meta property="og:title" content={title} />
+                <meta property="og:description" content={description} />
+                <meta property="og:image" content={image} />
+                {/* <meta property="fb:app_id" content={config.siteFBAppID} /> */}
+                <meta property="og:locale" content="en_US" />
+
+
+                {/* Twitter Card tags */}
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:creator" content={`@${name}`} />
+                <meta name="twitter:title" content={title} />
+                <meta name="twitter:description" content={description} />
+                <meta name="twitter:image" content={image} />
+                <meta name="twitter:site" content={`@${name}`} />
+            </Helmet>
+
+        );
+
+    }
+
 }
-
-SEO.defaultProps = {
-  lang: `en`,
-  meta: [],
-  keywords: [],
-}
-
-SEO.propTypes = {
-  description: PropTypes.string,
-  lang: PropTypes.string,
-  meta: PropTypes.array,
-  keywords: PropTypes.arrayOf(PropTypes.string),
-  title: PropTypes.string.isRequired,
-}
-
-export default SEO

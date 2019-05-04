@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `TrickiT - Abs Workout`,
-    description: `ABS workouts - YouTube Channel.`,
+    description: `TrickiT Workout, YouTube Channel.`,
     author: `@denis`,
   },
   plugins: [
