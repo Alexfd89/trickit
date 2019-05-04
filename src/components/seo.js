@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Helmet from 'react-helmet';
 
-export default class SEO extends Component {
+export default class seo extends Component {
 
     render() {
         const title = 'TrickiT Workout';
@@ -9,6 +9,7 @@ export default class SEO extends Component {
         const url = 'https://trickit.netlify.com';
         const description = 'TrickiT Workout, YouTube Channel.';
         const image = `${url}/static/logo-74fdd5d5384ffbcfcca0b737b891d040.png`;
+        const keywords = [`trickit`, `trickit workout`, `abs`, `workout`, `abs beginners`, `abs advanced`];
 
         const schemaOrgJSONLD = {
             "@context": "http://schema.org",
@@ -19,15 +20,18 @@ export default class SEO extends Component {
         }
 
         return (
-
-            <Helmet>
+            <Helmet
+            title='asd'
+            >
                 <title>{title}</title>
                 {/* YouTube Subscribe Button */}
                 <script src="https://apis.google.com/js/platform.js"></script>
                 {/* General tags */}
+                <meta name="author" content={name} />
                 <meta name="description" content={description} />
                 <meta name="image" content={image} />
                 <meta http-equiv="content-language" content="en" />
+                <meta name="keywords" content={keywords.join(', ')} />
 
 
                 {/* Schema.org tags */}
@@ -55,7 +59,6 @@ export default class SEO extends Component {
                 <meta name="twitter:image" content={image} />
                 <meta name="twitter:site" content={`@${name}`} />
             </Helmet>
-
         );
 
     }

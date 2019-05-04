@@ -1,12 +1,12 @@
 import React from "react"
 import Layout from "../components/layout"
-import SEO from "../components/seo1"
+import SEO from "../components/seo"
 import VideoSection from '../components/VideoSection'
 import { Grid, Typography } from '@material-ui/core'
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" keywords={[`trickit`, `abs`, `workout`, `abs beginners`, `abs advanced`]} />
+    <SEO />
     <div className='sector'>
       <Typography className='sectorTitle' variant='h4' style={{ color: 'lightgrey' }} align='center'>beginners</Typography>
     </div>
