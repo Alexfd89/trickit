@@ -22,7 +22,8 @@ export default class SEO extends Component {
 
             <Helmet>
                 <title>{title}</title>
-
+                {/* YouTube Subscribe Button */}
+                <script src="https://apis.google.com/js/platform.js"></script>
                 {/* General tags */}
                 <meta name="description" content={description} />
                 <meta name="image" content={image} />

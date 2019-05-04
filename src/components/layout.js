@@ -40,7 +40,7 @@ const Layout = ({ children }) => (
       <main>{children}</main>
     </div>
     <footer style={{ background: '#212121', padding: '5px 0' }}>
-      <Typography align='center' style={{ color: 'lightgrey', padding: '10px 0' }}>Always surprise your ABS with new exercise!</Typography>
+      <Typography align='center' style={{ color: 'lightgrey', padding: '10px 0' }}>Always surprise your body with new exercise!</Typography>
       <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
         <a href="mailto:denislitose@gmail.com">
           <IoIosMail style={{ fontSize: '40px', color: 'grey' }} />

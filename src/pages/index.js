@@ -42,6 +42,9 @@ const IndexPage = () => (
       <VideoSection src="https://www.youtube.com/embed/ixNDA2mReXo" />
       <VideoSection src="https://www.youtube.com/embed/MNKKxUwporg" />
     </Grid>
+    <div>
+      <div class="g-ytsubscribe" data-channelid="UCYQ9fTqUFNRmuSrXYHMHhZw" data-layout="full" data-theme="dark" data-count="hidden"></div>
+    </div>
   </Layout>
 )
 
