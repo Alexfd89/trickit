@@ -6,6 +6,7 @@ import logo from '../images/logo.png'
 import { TiSocialYoutubeCircular } from "react-icons/ti";
 import { FaFacebook } from "react-icons/fa";
 import { IoIosMail } from "react-icons/io";
+import YoutubeButton from './YoutubeButton';
 
 
 const Layout = ({ children }) => (
@@ -24,9 +25,10 @@ const Layout = ({ children }) => (
               <a href="https://www.facebook.com/denis.safronov.35">
                 <FaFacebook style={{ fontSize: '29px', color: 'grey', margin: '0 10px' }} />
               </a> */}
-              <a href="https://www.youtube.com/channel/UC_eJD_8L87rz-Oe_6tyY3Vg">
+              {/* <a href="https://www.youtube.com/channel/UCYQ9fTqUFNRmuSrXYHMHhZw">
                 <TiSocialYoutubeCircular style={{ fontSize: '39px', color: 'grey' }} />
-              </a>
+              </a> */}
+              <YoutubeButton />
             </div>
           </Slide>
         </Toolbar>
@@ -40,15 +42,19 @@ const Layout = ({ children }) => (
       <main>{children}</main>
     </div>
     <footer style={{ background: '#212121', padding: '5px 0' }}>
+      <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', padding: '10px 0' }}>
+      <YoutubeButton />
+      </div>
       <Typography align='center' style={{ color: 'lightgrey', padding: '10px 0' }}>Always surprise your body with new exercise!</Typography>
       <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+
         <a href="mailto:denislitose@gmail.com">
           <IoIosMail style={{ fontSize: '40px', color: 'grey' }} />
         </a>
         <a href="https://www.facebook.com/denis.safronov.35">
           <FaFacebook style={{ fontSize: '29px', color: 'grey', margin: '0 10px' }} />
         </a>
-        <a href="https://www.youtube.com/channel/UC_eJD_8L87rz-Oe_6tyY3Vg">
+        <a href="https://www.youtube.com/channel/UCYQ9fTqUFNRmuSrXYHMHhZw">
           <TiSocialYoutubeCircular style={{ fontSize: '39px', color: 'grey' }} />
         </a>
       </div>
