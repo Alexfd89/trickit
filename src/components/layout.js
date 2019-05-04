@@ -1,7 +1,7 @@
 import React from "react"
 import withStyles from '@material-ui/core/styles/withStyles'
 import styles from '../styles'
-import { AppBar, Toolbar, Slide, Typography } from '@material-ui/core'
+import { AppBar, Toolbar, Typography } from '@material-ui/core'
 import logo from '../images/logo.png'
 import { TiSocialYoutubeCircular } from "react-icons/ti";
 import { FaFacebook } from "react-icons/fa";
@@ -16,7 +16,7 @@ const Layout = ({ children }) => (
           <div style={{ flexGrow: 1 }}>
             <img src={logo} alt='trickit logo' style={{ maxWidth: '180px', padding: '6px 0' }} />
           </div>
-          <Slide direction='left' in={true}>
+          {/* <Slide direction='left' in={true}>
             <div style={{ display: 'flex', alignItems: 'center' }}>
               <a href="mailto:denislitose@gmail.com">
                 <IoIosMail style={{ fontSize: '40px', color: 'grey' }} />
@@ -28,7 +28,7 @@ const Layout = ({ children }) => (
                 <TiSocialYoutubeCircular style={{ fontSize: '39px', color: 'grey' }} />
               </a>
             </div>
-          </Slide>
+          </Slide> */}
         </Toolbar>
       </AppBar>
     </div>
