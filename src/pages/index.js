@@ -17,6 +17,7 @@ const IndexPage = () => (
     </div>
     <Grid container spacing={16} alignContent='center' className='grid'>
       <VideoSection src="https://www.youtube.com/embed/-ul1b6SEnAM" />
+      <VideoSection src="https://www.youtube.com/embed/J6vmo70hhvs" />
     </Grid>
     <div className='sector'>
       <Typography className='sectorTitle' variant='h4' style={{ color: 'lightgrey' }} align='center'>advanced</Typography>
@@ -28,6 +29,8 @@ const IndexPage = () => (
     </div>
     <Grid container spacing={24} alignContent='center' className='grid'>
       <VideoSection src="https://www.youtube.com/embed/kxSIn-E-KT4" />
+      <VideoSection src="https://www.youtube.com/embed/lPBHrfqVTxg" />
+      <VideoSection src="https://www.youtube.com/embed/5QM0zXL_mCk" />
     </Grid>
     <div className='sector'>
       <Typography className='sectorTitle' variant='h4' style={{ color: 'lightgrey' }} align='center'>plank</Typography>
